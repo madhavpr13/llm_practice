@@ -1,6 +1,6 @@
 import chromadb
 from chromadb.utils import embedding_functions
-from documents import DOCUMENTS, GENRES
+from old_documents import DOCUMENTS, GENRES
 
 CHROMA_DATA_PATH = "chroma_data/"
 EMBED_MODEL = "all-MiniLM-L6-v2"

@@ -1,3 +1,3 @@
-from data_preparation import CarReview
-from data_preparation import make_car_review_list
+from database import get_car_reviews
 
+reviews = get_car_reviews()
