@@ -30,8 +30,9 @@ def build_chroma_collection(
     )
 
     document_indices = list(range(len(documents)))
+    print(f'Number of documents to scan: {len(document_indices)}')
     pbar = tqdm(total=len(document_indices), desc="Processing batches")
-    for batch in batched(document_indices, 1000):
+    for batch in batched(document_indices, 500):
         start_idx = batch[0]
         end_idx = batch[-1]
         collection.add(
